@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <title>Table_App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Company app</h1>
+        <form class="main-form">
+            <input id="search-company" type="text" placeholder="Search field..." disabled/>
+        </form>
+        <div class="horizontal-scroll">
+            <table class="main-table" width="100%" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr data-type="header">
+                        <th data-order="mixed" id="id">Id <span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                        <th data-order="mixed" id="name">Name<span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                        <th data-order="mixed" id="city">City<span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                        <th data-order="mixed" id="total">Total Income<span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                        <th data-order="mixed" id="average">Average Income<span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                        <th data-order="mixed" id="lastMonthIncomeSummary">Last Month Income<span class="sort-order ascending">^</span><span class="sort-order descending">v</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically loaded content goes here -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <p id="info">Page X of Y</p>
+            <select id="items-per-page" disabled>
+                <option value="5">5 per page</option>
+                <option value="10">10 per page</option>
+                <option value="15">15 per page</option>
+            </select>
+            <button type="button" id="previous" disabled>&laquo;</button>
+            <button type="button" id="next" disabled>&raquo;</button>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

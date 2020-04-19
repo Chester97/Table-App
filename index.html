@@ -11,6 +11,7 @@
         <h1>Company app</h1>
         <form class="main-form">
             <input id="search-company" type="text" placeholder="Search field..." disabled/>
+            <span id="results-counter"></span>
         </form>
         <div class="horizontal-scroll">
             <table class="main-table" width="100%" cellspacing="0" cellpadding="10">
@@ -30,14 +31,16 @@
             </table>
         </div>
         <div>
-            <p id="info">Page X of Y</p>
+            <p>
+                <button type="button" id="previous" disabled>&laquo;</button>
+                <span id="info">Page X of Y</span>
+                <button type="button" id="next" disabled>&raquo;</button>
+            </p>
             <select id="items-per-page" disabled>
                 <option value="5">5 per page</option>
                 <option value="10">10 per page</option>
                 <option value="15">15 per page</option>
             </select>
-            <button type="button" id="previous" disabled>&laquo;</button>
-            <button type="button" id="next" disabled>&raquo;</button>
         </div>
     </div>
 

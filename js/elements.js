@@ -6,6 +6,7 @@ class UIElements {
         this.previousPageButton = document.getElementById('previous');
         this.nextPageButton = document.getElementById('next');
         this.searchCompanyInput = document.getElementById('search-company');
+        this.resultsCounter = document.getElementById('results-counter');
         this.itemsPerPage = document.getElementById('items-per-page');
         this.loadingElement = null;
         this.loadingString = "Loading...";
@@ -49,6 +50,10 @@ class UIElements {
         });
 
         this.container.appendChild(fragment);
+    }
+
+    setCounter(count) {
+        this.resultsCounter.textContent = count != null ? `Filtered ${count} result(s)` : '';
     }
 
     setIsLoading(value) {

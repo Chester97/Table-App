@@ -46,6 +46,7 @@ class Main {
             );
         this.recalculatePages();
         this.displayPage();
+        this.UI.setCounter(query.length === 0 ? null : this.targetItems.length);
       }
 
     calculateDetails(data) {

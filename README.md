@@ -10,7 +10,11 @@ Table is paginated with customizable page size. It also supports sorting data bo
 
 ## Installation
 
-In order to be able to run this app, you need to install its dependencies:
+In order to be able to build the app or run it in dev mode, you will need to install Parcel globally:
+```
+npm install -g parcel-bundler
+```
+Then, project's dependencies have to be installed:
 ```
 npm install
 ```
